@@ -1,0 +1,18 @@
+package com.culysoft.paymentapi.service;
+
+import org.springframework.stereotype.Service;
+
+import com.culysoft.paymentapi.repository.PaymentRepository;
+
+@Service
+public class PaymentService {
+
+	private PaymentRepository paymentRepository;
+
+	public PaymentService(PaymentRepository paymentRepository) {
+		this.paymentRepository = paymentRepository;
+	}
+	
+	
+	
+}

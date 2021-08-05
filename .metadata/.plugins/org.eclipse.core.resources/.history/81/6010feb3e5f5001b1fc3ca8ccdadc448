@@ -1,0 +1,5 @@
+package com.culysoft.paymentapi.service;
+
+public class PaymentService {
+
+}

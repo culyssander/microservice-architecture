@@ -1,0 +1,5 @@
+package com.culysoft.orderapi.service;
+
+public class OrderService {
+
+}

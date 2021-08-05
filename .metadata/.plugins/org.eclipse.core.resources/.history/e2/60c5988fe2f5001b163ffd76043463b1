@@ -1,0 +1,5 @@
+package com.culysoft.orderapi.entity;
+
+public class Order {
+
+}

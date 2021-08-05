@@ -1,0 +1,5 @@
+package com.culysoft.paymentapi.controller;
+
+public class PaymentController {
+
+}

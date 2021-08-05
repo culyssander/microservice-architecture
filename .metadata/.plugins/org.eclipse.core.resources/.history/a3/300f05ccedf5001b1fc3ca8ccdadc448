@@ -1,0 +1,26 @@
+package com.culysoft.paymentapi.service;
+
+import java.util.UUID;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.culysoft.paymentapi.entity.Payment;
+import com.culysoft.paymentapi.repository.PaymentRepository;
+
+@Service
+public class PaymentService {
+
+	private PaymentRepository paymentRepository;
+
+	@Autowired
+	public PaymentService(PaymentRepository paymentRepository) {
+		this.paymentRepository = paymentRepository;
+	}
+	
+	public Payment doPayment(Payment payment) {
+		payment.setTransactionId(UUID.randomUUID());
+		return this.paymentRepository.save(payment);
+	}
+	
+}

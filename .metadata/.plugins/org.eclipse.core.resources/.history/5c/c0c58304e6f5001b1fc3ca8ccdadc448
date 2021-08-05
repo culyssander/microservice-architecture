@@ -1,0 +1,23 @@
+package com.culysoft.paymentapi.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.culysoft.paymentapi.entity.Payment;
+import com.culysoft.paymentapi.repository.PaymentRepository;
+
+@Service
+public class PaymentService {
+
+	private PaymentRepository paymentRepository;
+
+	@Autowired
+	public PaymentService(PaymentRepository paymentRepository) {
+		this.paymentRepository = paymentRepository;
+	}
+	
+	public Payment doPayment(Payment payment) {
+		return this.paymentRepository.save(payment);
+	}
+	
+}

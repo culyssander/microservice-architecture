@@ -1,0 +1,5 @@
+package com.culysoft.orderapi.config;
+
+public class AppConfig {
+
+}

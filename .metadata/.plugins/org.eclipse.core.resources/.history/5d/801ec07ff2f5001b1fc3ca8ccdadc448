@@ -1,0 +1,19 @@
+package com.culysoft.paymentapi.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+@Entity
+@Table(name = "ORDER_TB")
+public class Order {
+	
+	private Long id;
+
+}

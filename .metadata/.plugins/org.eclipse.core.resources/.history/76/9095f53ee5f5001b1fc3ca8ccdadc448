@@ -1,0 +1,5 @@
+package com.culysoft.paymentapi.entity;
+
+public class Status {
+
+}

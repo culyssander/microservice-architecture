@@ -1,0 +1,5 @@
+package com.culysoft.paymentapi.exception;
+
+public class PaymentNotFoundException {
+
+}

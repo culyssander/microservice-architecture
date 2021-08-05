@@ -1,0 +1,10 @@
+package com.culysoft.orderapi.common;
+
+import com.culysoft.orderapi.entity.Order;
+
+public class TransactionRequest {
+	
+	private Order order;
+	private Payment payment;
+
+}
